@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Removal Request</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .email-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .email-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            background-color: #008080;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #006666;
+        }
+
+        .success-msg {
+            text-align: center;
+            font-size: 18px;
+            color: #008080;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Data Removal Request</h1>
+        <p>If you wish to delete your data from our application, please provide your email address below and we will
+            process your request.</p>
+        <form class="email-form" id="emailForm">
+            <input type="email" class="email-input" id="emailInput" placeholder="Enter your email address" required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="success-msg" id="successMsg"></div>
+    </div>
+
+    <script>
+        const emailForm = document.getElementById('emailForm');
+        const emailInput = document.getElementById('emailInput');
+        const successMsg = document.getElementById('successMsg');
+
+        emailForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = emailInput.value;
+            // Отправка запроса на удаление данных с использованием email
+            // Можно добавить здесь логику обработки запроса на сервере
+            successMsg.textContent = 'Your data removal request has been submitted. We will process it shortly.';
+            emailForm.reset();
+        });
+    </script>
+</body>
+
+</html>

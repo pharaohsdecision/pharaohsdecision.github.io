@@ -1,0 +1,38 @@
+/* style.css */
+/* Дополнительные стили для лендинг страницы удаления данных */
+
+.container {
+    margin-top: 50px;
+}
+
+.email-form {
+    margin-bottom: 40px;
+}
+
+.email-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #006666;
+}
+
+.success-msg {
+margin-top: 30px;
+font-size: 18px;
+color: #008080;
+display: none;
+}
+
+.success-msg.show {
+display: block;
+}

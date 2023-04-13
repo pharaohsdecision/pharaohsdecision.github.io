@@ -1,0 +1,116 @@
+/* style.css */
+/* Reset default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles for body */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Set styles for header */
+header {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Set styles for title */
+.title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Set styles for content section */
+.content {
+    max-width: 960px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Set styles for animation container */
+.animation-container {
+    margin-bottom: 30px;
+}
+
+/* Set styles for pharaoh image */
+.pharaoh-image {
+    max-width: 100%;
+    animation-duration: 1s;
+}
+
+/* Set styles for description container */
+.description-container {
+    margin-bottom: 30px;
+}
+
+/* Set styles for description text */
+.description {
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    animation-duration: 1s;
+}
+
+/* Set styles for buttons container */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Set styles for buttons */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation-duration: 1s;
+}
+
+/* Set styles for button animations */
+.animated {
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+}
+100% {
+transform: scale(1);
+}
+}
